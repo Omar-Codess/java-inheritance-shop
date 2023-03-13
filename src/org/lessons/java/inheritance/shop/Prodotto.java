@@ -1,6 +1,7 @@
 package org.lessons.java.inheritance.shop;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Prodotto {
     //CAMPI
@@ -19,6 +20,7 @@ public class Prodotto {
         this.vat = vat;
     }
 
+    //GETTER E SETTER
     public int getCode() {
         return code;
     }
@@ -55,4 +57,9 @@ public class Prodotto {
         this.vat = vat;
     }
 
+    //METODI
+    public BigDecimal getFinalPrice(){
+        BigDecimal ivaCalcolata = price.multiply(vat);
+        return price.add(ivaCalcolata).setScale(2, RoundingMode.HALF_EVEN);
+    }
 }
