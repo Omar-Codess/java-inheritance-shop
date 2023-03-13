@@ -8,6 +8,11 @@ public class Smartphone extends Prodotto {
     int memoryInGb;
     public Smartphone(int code, String name, String description, BigDecimal price, BigDecimal vat) {
         super(code, name, description, price, vat);
+        code = 1234;
+        name = "iphone";
+
+
 
     }
+
 }
