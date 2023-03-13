@@ -13,7 +13,6 @@ public class Carrello {
         System.out.println("Benvenuto! Quanti prodotti desideri mettere nel carrello?");
         int itemsNumber = scan.nextInt();
 
-        Prodotto carrello[] = new Prodotto[itemsNumber];
 
         for (int i = 0; i <= itemsNumber; i++){
 
@@ -22,6 +21,7 @@ public class Carrello {
             System.out.println("- Digita 3 per Cuffie;");
             int userInput = scan.nextInt();
 
+            Prodotto[] carrello = new Prodotto[itemsNumber];
 
             switch (userInput){
                 case 1:
@@ -36,8 +36,8 @@ public class Carrello {
                     BigDecimal price = scan.nextBigDecimal();
                     System.out.println("iva:");
                     BigDecimal vat = scan.nextBigDecimal();
-
-                    carrello = new Smartphone[]{new Smartphone(code, name, description, price, vat)};
+                    carrello[i] = new Smartphone(code, name, description, price, vat);
+                    break;
                 case 2:
                     System.out.println("TELEVISIONE");
                     System.out.println("codice:");
@@ -50,6 +50,8 @@ public class Carrello {
                     price = scan.nextBigDecimal();
                     System.out.println("iva:");
                     vat = scan.nextBigDecimal();
+                    carrello[i] = new Televisione(code, name, description, price, vat);
+                    break;
                 case 3:
                     System.out.println("CUFFIE");
                     System.out.println("codice:");
@@ -62,6 +64,10 @@ public class Carrello {
                     price = scan.nextBigDecimal();
                     System.out.println("iva:");
                     vat = scan.nextBigDecimal();
+                    carrello[i] = new Smartphone(code, name, description, price, vat);
+                    break;
+                default:
+                    System.out.println("Operazione non riuscita. Riprova.");
             }
         }
     }
