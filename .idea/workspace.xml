@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebd2cac7-e186-48d6-bf17-cbd91281efe3" name="Changes" comment="creati getter e setter">
+    <list default="true" id="ebd2cac7-e186-48d6-bf17-cbd91281efe3" name="Changes" comment="creato metodo che calcola il prezzo finale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/inheritance/shop/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/inheritance/shop/Prodotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +61,20 @@
       <option name="project" value="LOCAL" />
       <updated>1678715242764</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creato metodo che calcola il prezzo finale">
+      <created>1678716290730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678716290730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="istanziati i campi" />
     <MESSAGE value="creati getter e setter" />
-    <option name="LAST_COMMIT_MESSAGE" value="creati getter e setter" />
+    <MESSAGE value="creato metodo che calcola il prezzo finale" />
+    <option name="LAST_COMMIT_MESSAGE" value="creato metodo che calcola il prezzo finale" />
   </component>
 </project>
